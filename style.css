@@ -1,1 +1,60 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ===CORES=== */
+    
+    /* escala de cinza */
+
+    /* paleta 1 */
+
+    /* ===FONTES=== */
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+.circle {
+    background-color: gray;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 22px;
+    border: 1px solid rgb(255, 0, 0);
+    margin: 8px 3px;
+}
+
+.headerBoxImage{
+    border: 1px solid rgb(255, 0, 0);
+    display: flex;
+    margin-bottom: 20px;
+}
+.headerBoxMsg{
+    border: 1px solid rgb(255, 0, 0);
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* About */
 
