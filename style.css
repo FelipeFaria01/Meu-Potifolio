@@ -1,60 +1,128 @@
 @charset "UTF-8";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 :root {
-    /* ===CORES=== */
-    
-    /* escala de cinza */
+  /* ===CORES=== */
 
-    /* paleta 1 */
+  /* CLARO */
+--cor1:#D16DF2;
+--cor2:#C548DB;
+--cor3:#BE69F0;
+--cor4:#F8C7FF;
+--cor5:#F8F8F8;
+--cor6:#303030 ;
 
-    /* ===FONTES=== */
+
+/* ESCURO */
+
+
+  /* ===FONTES=== */
+}
+
+/* GERAL */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerMsg {
+    text-align: center;
 }
 
 /* HEADER */
 
 header {
-    background-color: rgb(216, 216, 216);
-    display: flex;
-    flex-flow:column nowrap;
+  background-color: var(--cor9
+  );
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.circle {
-    background-color: gray;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.hamburgueMenu {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  cursor: pointer;
+  background-color: var(--cor6);
+  box-shadow: 0 0px 10px rgba(54, 42, 77, 0.555);
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.headerBoxImage {
+  margin: 25px 0px;
 }
 
-.headerBox{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 22px;
-    border: 1px solid rgb(255, 0, 0);
-    margin: 8px 3px;
+.headerBoxImage img {
+      background-color: var(--cor3);
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.644);
+    transition: transform 0.3s ease;
+}
+.headerBoxImage img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
-.headerBoxImage{
-    border: 1px solid rgb(255, 0, 0);
-    display: flex;
-    margin-bottom: 20px;
+
+.headerBoxMsg {
+
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.headerBoxMsg{
-    border: 1px solid rgb(255, 0, 0);
-    display: flex;
-    margin-bottom: 20px;
+
+.headerBoxMsg p > strong {
+    color: var(--cor2);
 }
+
+.headerBoxMsg h2 , p {
+    padding: 10px;
+}
+
+
+.bntTopoSite {
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    margin-bottom: 10px;
+}
+
 
 /* About */
-
