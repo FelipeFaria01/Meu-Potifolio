@@ -1,42 +1,42 @@
 @charset "UTF-8";
 
+/* GERAL */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html{
+  color: var(--cor5);
+  background-color: var(--cor6);
 }
 
 :root {
-  /* ===CORES=== */
 
   /* CLARO */
---cor1:#D16DF2;
---cor2:#C548DB;
---cor3:#BE69F0;
---cor4:#F8C7FF;
---cor5:#F8F8F8;
---cor6:#303030 ;
-
-
-/* ESCURO */
-
+  --cor1: #f26d6d;
+  --cor2: #db4848;
+  --cor3: #f06969;
+  --cor4: #ffc7c7;
+  --cor5: #f8f8f8;
+  --cor6: #303030;
 
   /* ===FONTES=== */
 }
 
-/* GERAL */
-
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 p {
-    font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .circle {
@@ -53,16 +53,24 @@ p {
 }
 
 .centerMsg {
-    text-align: center;
+  text-align: center;
+}
+
+.space {
+  margin: 20px;
+  font-size: 2.5rem;
 }
 
 /* HEADER */
 
 header {
-  background-color: var(--cor9
-  );
   display: flex;
   flex-flow: column nowrap;
+}
+
+.redesSociais > a{
+  color: #db4848;
+  margin: 5px 10px;
 }
 
 .hamburgueMenu {
@@ -74,10 +82,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   cursor: pointer;
-  background-color: var(--cor6);
-  box-shadow: 0 0px 10px rgba(54, 42, 77, 0.555);
+  background-color: var(--cor2);
+  box-shadow: 0 0px 10px rgba(255, 0, 0, 0.39);
 }
 
 .headerBoxImage {
@@ -85,18 +93,16 @@ header {
 }
 
 .headerBoxImage img {
-      background-color: var(--cor3);
-    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.644);
-    transition: transform 0.3s ease;
+  background-color: var(--cor2);
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.644);
+  transition: transform 0.3s ease;
 }
 .headerBoxImage img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
-
 .headerBoxMsg {
-
   margin-bottom: 20px;
   display: flex;
   flex-flow: column nowrap;
@@ -105,24 +111,23 @@ header {
 }
 
 .headerBoxMsg p > strong {
-    color: var(--cor2);
+  color: var(--cor2);
 }
 
-.headerBoxMsg h2 , p {
-    padding: 10px;
+.headerBoxMsg h2,
+p {
+  padding: 10px;
 }
-
 
 .bntTopoSite {
-    width: 150px;
-    height: 50px;
-    font-size: 1rem;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--cor3);
-    color: var(--cor5);
-    margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--cor3);
+  color: var(--cor5);
+  margin-bottom: 10px;
 }
-
 
 /* About */

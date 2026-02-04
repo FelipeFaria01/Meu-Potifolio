@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potifólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="hamburgueMenu">
-            <div class="">☰</div>
+            <p>☰</p>
         </div>
 
         <div class="headerBoxImage center">
@@ -21,31 +22,36 @@
         </div>
 
         <div class="headerBoxMsg">
-            <h2>Olá sou Felipe</h2>
-            <p class="centerMsg">Criando soluções criativas para um mundo em movimento. <strong>Sou desenvolvedor web front end</strong></p>
+            <h2>Olá sou Felipe !</h2>
+            <p class="centerMsg">Criando soluções criativas para um mundo em movimento. <strong>Sou desenvolvedor front end</strong></p>
 
         </div>
 
-        <div class="center">
-            <button class="bntTopoSite">Meu curriculo</button>
-        </div>
-
-        <div class="redesSociais">
-            ...
+        <div class="redesSociais center">
+            <a href="https://www.linkedin.com/in/feliperdrigomendes/" target="_blank"> <i class="fab fa-linkedin fa-2x"></i> </a>
+            <a href="https://github.com/FelipeFaria01?tab=repositories" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:devmendex@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
         </div>
     </header>
 
     <hr>
 
     <main>
-        <h1>Sobre</h1>
-        <div>FOTO</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem nostrum ipsa soluta. Incidunt quibusdam architecto veritatis laudantium nobis exercitationem culpa corrupti, qui nihil, ipsam aliquid tempore id quam deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aliquam accusamus harum. Repellendus soluta necessitatibus quia vel porro. Id ab non sint natus similique labore blanditiis veniam repellat alias praesentium?</p>
+        <h2 class="centerMsg space">Sobre</h2>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end.</p> 
+        
+        <p>Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind, criando interfaces responsivas, organizadas e otimizadas para SEO.</p> 
+        
+        <p>Descobri minha paixão pela programação ao explorar a criação de jogos e projetos visuais na adolescência, e hoje meu objetivo é aplicar criatividade e disciplina na construção de soluções digitais.</p> 
+        
+        <p>Busco minha primeira oportunidade profissional para colaborar em projetos reais e evoluir ao lado de uma equipe experiente.</p> 
 
         <hr>
 
-    <section class="projetosContainer">
-        <h2>Meus Projetos</h2>
+        <section class="projetosContainer">
+        <h2 class="space centerMsg">Meus Projetos</h2>
         <div class="container">
             <div class="projectBox">
                 <div>img</div>
@@ -64,8 +70,10 @@
 
     <hr>
 
+
     <section class="skillsContainer">    
         <div class="hardSkills">
+            <h2 class="space centerMsg">Hard Skill</h2>
             <div class="hardBox">
                 <p>img</p> <p>barra</p>
             </div>
@@ -90,7 +98,7 @@
     <hr>
 
     <section>
-        <h2>Contato</h2>
+        <h2 class="space centerMsg">Contato</h2>
         <form>
             <label for="nome">Nome</label>
             <input type="text" placeholder="Seu nome" id="nome"> 
