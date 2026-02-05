@@ -1,42 +1,37 @@
 @charset "UTF-8";
 
-/* GERAL */
-
+/* ==========================
+   RESET & BASE
+========================== */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
 
-html{
-  color: var(--cor5);
-  background-color: var(--cor6);
-}
-
 :root {
-
-  /* CLARO */
   --cor1: #f26d6d;
   --cor2: #db4848;
   --cor3: #f06969;
   --cor4: #ffc7c7;
   --cor5: #f8f8f8;
   --cor6: #303030;
-
-  /* ===FONTES=== */
 }
 
-h1 {
-  font-size: 2rem;
+html {
+  color: var(--cor5);
+  background-color: var(--cor6);
 }
 
+h1,
 h2 {
   font-size: 2rem;
 }
 
 p {
   font-size: 1.6rem;
+  padding: 10px 0;
 }
 
 .circle {
@@ -57,22 +52,56 @@ p {
 }
 
 .space {
-  margin: 20px;
+  margin: 20px 0;
   font-size: 2.5rem;
 }
 
-/* HEADER */
-
+/* ==========================
+   HEADER
+========================== */
 header {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.redesSociais > a{
-  color: #db4848;
+.redesSociais a {
+  color: var(--cor2);
   margin: 5px 10px;
+  transition: color 0.3s ease;
 }
 
+.redesSociais a:hover {
+  color: var(--cor1);
+}
+
+.headerBoxImage {
+  margin: 25px 0;
+}
+
+.headerBoxImage img {
+  background-color: var(--cor2);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.headerBoxImage img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.headerBoxMsg {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.headerBoxMsg strong {
+  color: var(--cor2);
+}
+
+/* ==========================
+   MENU HAMBÚRGUER
+========================== */
 .hamburgueMenu {
   position: fixed;
   bottom: 20px;
@@ -85,62 +114,59 @@ header {
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--cor2);
-  box-shadow: 0 0px 10px rgba(255, 0, 0, 0.39);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  color: var(--cor5);
+  font-size: 1.5rem;
+  z-index: 1000;
 }
 
-.headerBoxImage {
-  margin: 25px 0px;
+.menuLinks {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: none;
 }
 
-.headerBoxImage img {
-  background-color: var(--cor2);
-  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.644);
-  transition: transform 0.3s ease;
-}
-.headerBoxImage img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.menuLinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.headerBoxMsg {
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+.menuLinks li {
+  margin: 8px 0;
 }
 
-.headerBoxMsg p > strong {
-  color: var(--cor2);
+.menuLinks a {
+  color: var(--cor5);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.headerBoxMsg h2,
-p {
-  padding: 10px;
+.menuLinks a:hover {
+  color: var(--cor1);
 }
 
-
-/* Meus projetos */
-
-
-
-
-/* Minhas skills */
+/* ==========================
+   SKILLS
+========================== */
 .skillsContainer {
   max-width: 600px;
-  margin: auto;
+  margin: 40px auto;
 }
 
 .hardBox {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
+.hardBox i {
   margin-right: 15px;
+  font-size: 2rem;
 }
 
 .progress {
@@ -152,7 +178,7 @@ p {
 
 .progress-bar {
   height: 20px;
-  background-color: #4caf50; /* verde */
+  background-color: #4caf4c;
   text-align: right;
   padding-right: 5px;
   color: white;
@@ -160,5 +186,37 @@ p {
   line-height: 20px;
 }
 
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
 
+@media (min-width: 768px) {
+  .skillsContainer {
+    max-width: 700px;
+  }
+}
 
+@media (min-width: 1280px) {
+  .skillsContainer {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .skillsContainer {
+    max-width: 1100px;
+  }
+}

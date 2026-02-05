@@ -1,144 +1,142 @@
-<!-- 320 × 480 celular
-    768 × 1024 tablet
-    1280 x 720 notebook
-    1920 × 1080 Desktop -->
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Potifólio</title>
+    <title>Portfólio - Felipe Mendes</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <script src="javascript/script.js" defer></script>
   </head>
   <body>
     <header>
+      <button class="hamburgueMenu" aria-label="Abrir menu">☰</button>
+      <div class="menuLinks">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </div>
+
       <div class="headerBoxImage center">
         <img
           src="img/Imagem_do_WhatsApp_de_2025-10-17_à_s__00.20.11_f54f54be-removebg-preview.png"
-          alt="foto"
+          alt="Foto de Felipe Mendes"
           class="circle" />
       </div>
 
       <div class="headerBoxMsg">
-        <h2>Olá sou Felipe !</h2>
+        <h1>Olá, sou Felipe!</h1>
         <p class="centerMsg">
           Criando soluções criativas para um mundo em movimento.
-          <strong>Sou desenvolvedor front end</strong>
+          <strong>Sou desenvolvedor front-end</strong>
         </p>
       </div>
 
-      <div class="redesSociais center">
+      <nav class="redesSociais center">
         <a
           href="https://www.linkedin.com/in/feliperdrigomendes/"
-          target="_blank">
+          target="_blank"
+          aria-label="LinkedIn">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
         <a
-          href="https://github.com/FelipeFaria01?tab=repositories"
-          target="_blank">
+          href="https://github.com/FelipeFaria01"
+          target="_blank"
+          aria-label="GitHub">
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <a href="mailto:devmendex@gmail.com" target="_blank"
-          ><i class="fas fa-envelope fa-2x"></i
-        ></a>
-      </div>
+        <a href="mailto:devmendex@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </nav>
     </header>
 
-    <hr />
-
     <main>
-      <h2 class="centerMsg space">Sobre</h2>
-      <p>
-        Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
-        desenvolvimento front-end.
-      </p>
+      <!-- SOBRE -->
+      <section id="sobre">
+        <h2 class="centerMsg space">Sobre</h2>
+        <p>
+          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
+          desenvolvimento front-end.
+        </p>
+        <p>
+          Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind,
+          criando interfaces responsivas, organizadas e otimizadas para SEO.
+        </p>
+        <p>
+          Descobri minha paixão pela programação ao explorar a criação de jogos
+          e projetos visuais na adolescência. Hoje meu objetivo é aplicar
+          criatividade e disciplina na construção de soluções digitais.
+        </p>
+        <p>
+          Busco minha primeira oportunidade profissional para colaborar em
+          projetos reais e evoluir ao lado de uma equipe experiente.
+        </p>
+      </section>
 
-      <p>
-        Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind,
-        criando interfaces responsivas, organizadas e otimizadas para SEO.
-      </p>
-
-      <p>
-        Descobri minha paixão pela programação ao explorar a criação de jogos e
-        projetos visuais na adolescência, e hoje meu objetivo é aplicar
-        criatividade e disciplina na construção de soluções digitais.
-      </p>
-
-      <p>
-        Busco minha primeira oportunidade profissional para colaborar em
-        projetos reais e evoluir ao lado de uma equipe experiente.
-      </p>
-
-      <hr />
-
-      <section class="skillsContainer">
+      <!-- SKILLS -->
+      <section id="skills" class="skillsContainer">
+        <h2 class="space centerMsg">Hard Skills</h2>
         <div class="hardSkills">
-          <h2 class="space centerMsg">Hard Skills</h2>
-
           <div class="hardBox">
             <i class="devicon-html5-plain colored fa-3x"></i>
             <div class="progress">
-              <div class="progress-bar" style="width: 90%">90%</div>
+              <div class="progress-bar" style="width: 90%">HTML 90%</div>
             </div>
           </div>
 
           <div class="hardBox">
             <i class="devicon-css3-plain colored fa-3x"></i>
             <div class="progress">
-              <div class="progress-bar" style="width: 80%">80%</div>
+              <div class="progress-bar" style="width: 80%">CSS 80%</div>
             </div>
           </div>
 
           <div class="hardBox">
             <i class="devicon-javascript-plain colored fa-3x"></i>
             <div class="progress">
-              <div class="progress-bar" style="width: 60%">60%</div>
+              <div class="progress-bar" style="width: 60%">JavaScript 60%</div>
             </div>
           </div>
 
           <div class="hardBox">
             <i class="devicon-react-original colored fa-3x"></i>
             <div class="progress">
-              <div class="progress-bar" style="width: 40%">40%</div>
+              <div class="progress-bar" style="width: 40%">React 40%</div>
             </div>
           </div>
 
           <div class="hardBox">
             <i class="devicon-tailwindcss-plain colored fa-3x"></i>
             <div class="progress">
-              <div class="progress-bar" style="width: 40%">40%</div>
+              <div class="progress-bar" style="width: 40%">Tailwind 40%</div>
             </div>
           </div>
         </div>
       </section>
 
-      <hr />
-
-      <section class="projetosContainer">
+      <!-- PROJETOS -->
+      <section id="projetos" class="projetosContainer">
         <h2 class="space centerMsg">Meus Projetos</h2>
         <div class="container">
-          <div class="projectBox">
-            <div>img</div>
-            <p>informação</p>
-          </div>
-          <div class="projectBox">
-            <div>img</div>
-            <p>informação</p>
-          </div>
-          <div class="projectBox">
-            <div>img</div>
-            <p>informação</p>
-          </div>
-        </div>
-
-        <div class="hamburgueMenu">
-          <p>☰</p>
+          <article class="projectBox">
+            <div class="projectImg">img</div>
+            <p>Informação do projeto 1</p>
+          </article>
+          <article class="projectBox">
+            <div class="projectImg">img</div>
+            <p>Informação do projeto 2</p>
+          </article>
+          <article class="projectBox">
+            <div class="projectImg">img</div>
+            <p>Informação do projeto 3</p>
+          </article>
         </div>
       </section>
     </main>
