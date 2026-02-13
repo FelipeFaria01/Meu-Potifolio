@@ -1,54 +1,54 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Felipe Mendes</title>
+    <title>Portfólio de Felipe Mendes - Desenvolvedor Front-End</title>
+    <meta name="description" content="Portfólio de Felipe Mendes, desenvolvedor front-end. Experiência em HTML, CSS, JavaScript, React e Tailwind. Confira meus projetos e habilidades." />
+    
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <script src="javascript/script.js" defer></script>
   </head>
   <body>
     <header>
-      <button class="hamburgueMenu" aria-label="Abrir menu">☰</button>
-      <div class="menuLinks">
+      <!-- Menu hambúrguer (mobile) -->
+      <button class="hamburgueMenu" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navbar fixa -->
+      <nav class="navbar">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projetos">Projetos</a></li>
         </ul>
-      </div>
+      </nav>
 
       <div class="headerBoxImage center">
-        <img
-          src="img/Imagem_do_WhatsApp_de_2025-10-17_à_s__00.20.11_f54f54be-removebg-preview.png"
-          alt="Foto de Felipe Mendes"
-          class="circle" />
+        <img src="img/Imagem_do_WhatsApp_de_2025-10-17_à_s__00.20.11_f54f54be-removebg-preview.png" alt="Foto de Felipe Mendes, desenvolvedor front-end" class="circle" />
       </div>
 
       <div class="headerBoxMsg">
         <h1>Olá, sou Felipe!</h1>
-        <p class="centerMsg">
+        <p class="centerMsg padding">
           Criando soluções criativas para um mundo em movimento.
           <strong>Sou desenvolvedor front-end</strong>
         </p>
       </div>
 
       <nav class="redesSociais center">
-        <a
-          href="https://www.linkedin.com/in/feliperdrigomendes/"
-          target="_blank"
-          aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/feliperdrigomendes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a
-          href="https://github.com/FelipeFaria01"
-          target="_blank"
-          aria-label="GitHub">
+        <a href="https://github.com/FelipeFaria01" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github fa-2x"></i>
         </a>
         <a href="mailto:devmendex@gmail.com" aria-label="Email">
@@ -59,24 +59,19 @@
 
     <main>
       <!-- SOBRE -->
-      <section id="sobre">
-        <h2 class="centerMsg space">Sobre</h2>
-        <p>
-          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
-          desenvolvimento front-end.
+      <section id="sobre" class="sobre">
+        <h2 class="center space">Sobre</h2>
+        <p class="leftMsg padding">
+          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end.
         </p>
-        <p>
-          Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind,
-          criando interfaces responsivas, organizadas e otimizadas para SEO.
+        <p class="leftMsg padding">
+          Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind, criando interfaces responsivas, organizadas e otimizadas para SEO.
         </p>
-        <p>
-          Descobri minha paixão pela programação ao explorar a criação de jogos
-          e projetos visuais na adolescência. Hoje meu objetivo é aplicar
-          criatividade e disciplina na construção de soluções digitais.
+        <p class="leftMsg padding">
+          Descobri minha paixão pela programação ao explorar a criação de jogos e projetos visuais na adolescência. Hoje meu objetivo é aplicar criatividade e disciplina na construção de soluções digitais.
         </p>
-        <p>
-          Busco minha primeira oportunidade profissional para colaborar em
-          projetos reais e evoluir ao lado de uma equipe experiente.
+        <p class="leftMsg padding">
+          Busco minha primeira oportunidade profissional para colaborar em projetos e evoluir ao lado de uma equipe experiente.
         </p>
       </section>
 
@@ -85,35 +80,31 @@
         <h2 class="space centerMsg">Hard Skills</h2>
         <div class="hardSkills">
           <div class="hardBox">
-            <i class="devicon-html5-plain colored fa-3x"></i>
+            <i class="devicon-html5-plain colored fa-3x" aria-hidden="true"></i>
             <div class="progress">
               <div class="progress-bar" style="width: 90%">HTML 90%</div>
             </div>
           </div>
-
           <div class="hardBox">
-            <i class="devicon-css3-plain colored fa-3x"></i>
+            <i class="devicon-css3-plain colored fa-3x" aria-hidden="true"></i>
             <div class="progress">
               <div class="progress-bar" style="width: 80%">CSS 80%</div>
             </div>
           </div>
-
           <div class="hardBox">
-            <i class="devicon-javascript-plain colored fa-3x"></i>
+            <i class="devicon-javascript-plain colored fa-3x" aria-hidden="true"></i>
             <div class="progress">
               <div class="progress-bar" style="width: 60%">JavaScript 60%</div>
             </div>
           </div>
-
           <div class="hardBox">
-            <i class="devicon-react-original colored fa-3x"></i>
+            <i class="devicon-react-original colored fa-3x" aria-hidden="true"></i>
             <div class="progress">
               <div class="progress-bar" style="width: 40%">React 40%</div>
             </div>
           </div>
-
           <div class="hardBox">
-            <i class="devicon-tailwindcss-plain colored fa-3x"></i>
+            <i class="devicon-tailwindcss-plain colored fa-3x" aria-hidden="true"></i>
             <div class="progress">
               <div class="progress-bar" style="width: 40%">Tailwind 40%</div>
             </div>
@@ -126,15 +117,15 @@
         <h2 class="space centerMsg">Meus Projetos</h2>
         <div class="container">
           <article class="projectBox">
-            <div class="projectImg">img</div>
+            <div class="projectImg"><img src="img/projeto1.png" alt="Imagem do projeto 1"></div>
             <p>Informação do projeto 1</p>
           </article>
           <article class="projectBox">
-            <div class="projectImg">img</div>
+            <div class="projectImg"><img src="img/projeto2.png" alt="Imagem do projeto 2"></div>
             <p>Informação do projeto 2</p>
           </article>
           <article class="projectBox">
-            <div class="projectImg">img</div>
+            <div class="projectImg"><img src="img/projeto3.png" alt="Imagem do projeto 3"></div>
             <p>Informação do projeto 3</p>
           </article>
         </div>
