@@ -15,11 +15,69 @@
   --cor2: #db4848;
   --cor3: #f06969;
   --cor4: #ffc7c7;
-  --cor5: #f8f8f8;
-  --cor6: #303030;
+  --cor5: #f8f8f8; /* texto claro */
+  --cor6: #303030; /* fundo escuro */
 }
 
+/* Tema claro */
+.light-theme {
+  --cor1: #4a90e2; /* azul destaque */
+  --cor2: #357ab8;
+  --cor3: #5fa8f5;
+  --cor4: #dceeff;
+  --cor5: #303030; /* texto escuro */
+  --cor6: #eae7f5; /* fundo claro */
+}
+
+body {
+  background-color: var(--cor6);
+  color: var(--cor5);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.themeBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--cor2);
+  color: var(--cor5);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.themeBtn:hover {
+  transform: rotate(20deg) scale(1.1);
+  background-color: var(--cor1);
+}
+
+
+.themeBtn:hover {
+  background-color: var(--cor1);
+}
+
+.skillName {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--cor1);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skillName.active {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+
+
 html {
+  scroll-behavior: smooth;
   color: var(--cor5);
   background-color: var(--cor6);
 }
@@ -120,14 +178,16 @@ header {
 
 .headerBoxImage img {
   background-color: var(--cor2);
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); /* sombra padrão escura */
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
 }
 
-.headerBoxImage img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+/* Quando estiver no tema claro */
+.light-theme .headerBoxImage img {
+  background-color: var(--cor2);
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.6); /* sombra azulada */
 }
+
 
 .headerBoxMsg {
   display: flex;
@@ -156,6 +216,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border-style: none;
   cursor: pointer;
   background-color: var(--cor2);
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
@@ -227,16 +288,23 @@ main {
   margin: 40px auto;
 }
 
-.hardBox {
-  display: flex;
-  align-items: center;
-  margin: 15px 0;
+.skillsIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 30px 0;
 }
 
-.hardBox i {
-  margin-right: 15px;
-  font-size: 2rem;
+.skillsIcons i {
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.skillsIcons i:hover {
+  transform: scale(1.2);
+  color: var(--cor1); /* destaque em vermelho ou outra cor */
+}
+
 
 .progress {
   flex: 1;
@@ -254,6 +322,20 @@ main {
   font-size: 12px;
   line-height: 20px;
 }
+
+.subSection {
+  margin-bottom: 40px;
+}
+
+.subSection h3 {
+  color: var(--cor1);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--cor2);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 
 /* ==========================
    RESPONSIVIDADE

@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio de Felipe Mendes - Desenvolvedor Front-End</title>
-    <meta name="description" content="Portfólio de Felipe Mendes, desenvolvedor front-end. Experiência em HTML, CSS, JavaScript, React e Tailwind. Confira meus projetos e habilidades." />
-    
+    <meta
+      name="description"
+      content="Portfólio de Felipe Mendes, desenvolvedor front-end. Experiência em HTML, CSS, JavaScript, React e Tailwind. Confira meus projetos e habilidades." />
+
     <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <!-- Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <script src="javascript/script.js" defer></script>
   </head>
   <body>
     <header>
+      <button id="themeToggle" class="themeBtn">🌙</button>
+
+
       <!-- Menu hambúrguer (mobile) -->
       <button class="hamburgueMenu" aria-label="Abrir menu">
         <i class="fas fa-bars"></i>
@@ -33,7 +42,10 @@
       </nav>
 
       <div class="headerBoxImage center">
-        <img src="img/Imagem_do_WhatsApp_de_2025-10-17_à_s__00.20.11_f54f54be-removebg-preview.png" alt="Foto de Felipe Mendes, desenvolvedor front-end" class="circle" />
+        <img
+          src="img/Imagem_do_WhatsApp_de_2025-10-17_à_s__00.20.11_f54f54be-removebg-preview.png"
+          alt="Foto de Felipe Mendes, desenvolvedor front-end"
+          class="circle" />
       </div>
 
       <div class="headerBoxMsg">
@@ -45,10 +57,18 @@
       </div>
 
       <nav class="redesSociais center">
-        <a href="https://www.linkedin.com/in/feliperdrigomendes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a
+          href="https://www.linkedin.com/in/feliperdrigomendes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://github.com/FelipeFaria01" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a
+          href="https://github.com/FelipeFaria01"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub">
           <i class="fab fa-github fa-2x"></i>
         </a>
         <a href="mailto:devmendex@gmail.com" aria-label="Email">
@@ -62,74 +82,88 @@
       <section id="sobre" class="sobre">
         <h2 class="center space">Sobre</h2>
         <p class="leftMsg padding">
-          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento front-end.
+          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
+          desenvolvimento front-end.
         </p>
         <p class="leftMsg padding">
-          Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind, criando interfaces responsivas, organizadas e otimizadas para SEO.
+          Tenho experiência prática em HTML, CSS, JavaScript, React e Tailwind,
+          criando interfaces responsivas, organizadas e otimizadas para SEO.
         </p>
         <p class="leftMsg padding">
-          Descobri minha paixão pela programação ao explorar a criação de jogos e projetos visuais na adolescência. Hoje meu objetivo é aplicar criatividade e disciplina na construção de soluções digitais.
+          Descobri minha paixão pela programação ao explorar a criação de jogos
+          e projetos visuais na adolescência. Hoje meu objetivo é aplicar
+          criatividade e disciplina na construção de soluções digitais.
         </p>
         <p class="leftMsg padding">
-          Busco minha primeira oportunidade profissional para colaborar em projetos e evoluir ao lado de uma equipe experiente.
+          Busco minha primeira oportunidade profissional para colaborar em
+          projetos e evoluir ao lado de uma equipe experiente.
         </p>
       </section>
 
       <!-- SKILLS -->
       <section id="skills" class="skillsContainer">
         <h2 class="space centerMsg">Hard Skills</h2>
-        <div class="hardSkills">
-          <div class="hardBox">
-            <i class="devicon-html5-plain colored fa-3x" aria-hidden="true"></i>
-            <div class="progress">
-              <div class="progress-bar" style="width: 90%">HTML 90%</div>
-            </div>
-          </div>
-          <div class="hardBox">
-            <i class="devicon-css3-plain colored fa-3x" aria-hidden="true"></i>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%">CSS 80%</div>
-            </div>
-          </div>
-          <div class="hardBox">
-            <i class="devicon-javascript-plain colored fa-3x" aria-hidden="true"></i>
-            <div class="progress">
-              <div class="progress-bar" style="width: 60%">JavaScript 60%</div>
-            </div>
-          </div>
-          <div class="hardBox">
-            <i class="devicon-react-original colored fa-3x" aria-hidden="true"></i>
-            <div class="progress">
-              <div class="progress-bar" style="width: 40%">React 40%</div>
-            </div>
-          </div>
-          <div class="hardBox">
-            <i class="devicon-tailwindcss-plain colored fa-3x" aria-hidden="true"></i>
-            <div class="progress">
-              <div class="progress-bar" style="width: 40%">Tailwind 40%</div>
-            </div>
-          </div>
+<div class="skillsIcons center">
+  <i class="devicon-html5-plain colored fa-3x" data-skill="HTML"></i>
+  <i class="devicon-css3-plain colored fa-3x" data-skill="CSS"></i>
+  <i class="devicon-javascript-plain colored fa-3x" data-skill="JavaScript"></i>
+  <i class="devicon-react-original colored fa-3x" data-skill="React"></i>
+  <i class="devicon-react-original colored fa-3x" data-skill="React Native"></i>
+  <i class="devicon-tailwindcss-plain colored fa-3x" data-skill="Tailwind"></i>
+  <i class="devicon-typescript-plain colored fa-3x" data-skill="Typescript"></i>
+  <i class="devicon-nodejs-plain colored fa-3x" data-skill="Node.js"></i>
+</div>
+
+<!-- Container para mostrar o nome -->
+<div id="skillName" class="skillName"></div>
+
+</section>
+
         </div>
       </section>
 
       <!-- PROJETOS -->
       <section id="projetos" class="projetosContainer">
-        <h2 class="space centerMsg">Meus Projetos</h2>
-        <div class="container">
-          <article class="projectBox">
-            <div class="projectImg"><img src="img/projeto1.png" alt="Imagem do projeto 1"></div>
-            <p>Informação do projeto 1</p>
-          </article>
-          <article class="projectBox">
-            <div class="projectImg"><img src="img/projeto2.png" alt="Imagem do projeto 2"></div>
-            <p>Informação do projeto 2</p>
-          </article>
-          <article class="projectBox">
-            <div class="projectImg"><img src="img/projeto3.png" alt="Imagem do projeto 3"></div>
-            <p>Informação do projeto 3</p>
-          </article>
+  <h2 class="space centerMsg">Meus Projetos</h2>
+
+  <!-- Projetos Acadêmicos e de Estudo -->
+  <div class="subSection">
+    <h3 class="centerMsg">Projetos Acadêmicos & Estudo</h3>
+    <div class="container">
+      <article class="projectBox">
+        <div class="projectImg">
+          <img src="img/projeto1.png" alt="Imagem do projeto acadêmico 1" />
         </div>
-      </section>
+        <p>Projeto acadêmico 1 - Exercício de React.</p>
+      </article>
+      <article class="projectBox">
+        <div class="projectImg">
+          <img src="img/projeto2.png" alt="Imagem do projeto acadêmico 2" />
+        </div>
+        <p>Projeto acadêmico 2 - Aplicação de Tailwind.</p>
+      </article>
+    </div>
+  </div>
+
+  <!-- Projetos Práticos -->
+  <div class="subSection">
+    <h3 class="centerMsg">Projetos Práticos</h3>
+    <div class="container">
+      <article class="projectBox">
+        <div class="projectImg">
+          <img src="img/projeto3.png" alt="Imagem do projeto prático 1" />
+        </div>
+        <p>Projeto prático 1 - Landing Page responsiva.</p>
+      </article>
+      <article class="projectBox">
+        <div class="projectImg">
+          <img src="img/projeto4.png" alt="Imagem do projeto prático 2" />
+        </div>
+        <p>Projeto prático 2 - Integração com API usando JavaScript.</p>
+      </article>
+    </div>
+  </div>
+</section>
     </main>
   </body>
 </html>
