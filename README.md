@@ -13,7 +13,7 @@ Meu objetivo é evoluir constantemente, construir interfaces modernas e intuitiv
 - Ferramentas: Git, GitHub, VS Code, figma(básico)
 
 - ## 📂 Projetos
-- [Quiz_de_Perguntas]()  
+- [Quiz_de_Perguntas](https://github.com/FelipeFaria01/Quiz_de_Perguntas)  
   App acadêmico gamificado para iniciantes em programação.
 - [Projetos em desenvolvimento]  
   Em breve
