@@ -158,7 +158,7 @@ header {
    MENU MOBILE
 ========================= */
 .hamburgueMenu {
-   position: fixed;
+  position: fixed;
   bottom: 20px;
   right: 30px;
   width: 50px;
@@ -260,11 +260,12 @@ section {
 }
 
 /* =========================
-   PROJETOS
+   PROJETOS (ATUALIZADO)
 ========================= */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+  justify-content: center;
   gap: 20px;
 }
 
@@ -275,6 +276,9 @@ section {
   display: flex;
   flex-direction: column;
   transition: 0.3s;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .projectCard:hover {
@@ -285,8 +289,8 @@ section {
 .projectImg img {
   width: 100%;
   height: 180px;
-  object-fit: fill;
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
 .projectContent {
@@ -294,12 +298,14 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex: 1;
 }
 
 .techIcons {
   display: flex;
   gap: 10px;
   font-size: 1.5rem;
+  justify-content: center;
 }
 
 .projectLinks {
@@ -308,17 +314,14 @@ section {
   gap: 10px;
 }
 
-.projectContent,
-.projectContent h4,
-.projectContent p,
-.projectLinks a,
-.projectImg  {
+.projectLinks a {
   flex: 1;
   text-align: center;
   padding: 8px;
   text-decoration: none;
   background: var(--card-button);
   color: var(--texto-fixo-card);
+  border-radius: 6px;
   transition: 0.3s;
 }
 
@@ -347,6 +350,6 @@ section {
   }
 
   section {
-    width: 60%;
+    width: 80%;
   }
 }
