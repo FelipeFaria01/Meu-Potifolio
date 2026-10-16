@@ -16,10 +16,8 @@ Meu objetivo é evoluir constantemente, construir interfaces modernas e intuitiv
 - [Quiz_de_Perguntas](https://github.com/FelipeFaria01/Quiz_de_Perguntas)  
   App acadêmico gamificado para iniciantes em programação.
 
--[Clinica Odontológica]
--[cálculo de valor hora para freelancers]
--[...]
--[...]
+-[Clinica Odontológica](https://github.com/FelipeFaria01/Clinica_Odontologica) 
+  Site institucional voltado para pacientes a procura de uma clinica odontologica 
 - [Mais Projetos]  
   Em breve
 
