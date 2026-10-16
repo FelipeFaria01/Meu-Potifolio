@@ -12,6 +12,9 @@ Meu objetivo é evoluir constantemente, construir interfaces modernas e intuitiv
 - Frameworks: React, React Native, Tailwind
 - Ferramentas: Git, GitHub, VS Code, figma(básico)
 
+- ## Meu portifolio
+- [Portifolio](https://felipefaria01.github.io/Meu-Potifolio/)
+
 - ## 📂 Projetos
 - [Quiz_de_Perguntas](https://github.com/FelipeFaria01/Quiz_de_Perguntas)  
   App acadêmico gamificado para iniciantes em programação.
